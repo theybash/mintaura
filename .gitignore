@@ -1,0 +1,6 @@
+.vercel
+.DS_Store
+frames/
+screenshots/
+apple_source/
+*.py
