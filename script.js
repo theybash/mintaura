@@ -221,7 +221,8 @@ gsap.utils.toArray(
 // =============================================
 // Contact form — sends via Formspree
 // =============================================
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+const contactFormEl = document.getElementById('contactForm');
+if (contactFormEl) contactFormEl.addEventListener('submit', (e) => {
   e.preventDefault();
   const form = e.target;
   const btn = form.querySelector('button[type="submit"]');
