@@ -1556,3 +1556,52 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     font-size: 0.7rem;
   }
 }
+
+/* VALUE PACKS
+   Reuses .products / .product-card so packs inherit the product styling.
+   Only the price line differs: packs show a struck-through MRP and a saving. */
+.packs {
+  background: var(--color-bg-alt, #f7f9f7);
+}
+
+.packs-ship {
+  margin-top: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+}
+
+.product-price s {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9aa39c;
+  margin-left: 6px;
+}
+
+.product-price em {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* pack cards have no photo yet, so give the text a little more room */
+.packs .product-info {
+  padding-top: 28px;
+}
+
+@media (max-width: 600px) {
+  .product-price em {
+    display: block;
+    margin: 8px 0 0;
+    width: fit-content;
+  }
+}
