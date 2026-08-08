@@ -4,3 +4,4 @@ frames/
 screenshots/
 apple_source/
 *.py
+.env*
