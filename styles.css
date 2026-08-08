@@ -1605,3 +1605,31 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     width: fit-content;
   }
 }
+
+/* Minimum-order notice on single-bottle cards.
+   Single-bottle courier delivery loses money (Rs72 of logistics on a Rs110 order),
+   which is why 100ml and 15ml are sold in packs only. */
+.product-features .moq {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--color-primary-lighter);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.packs-bulk {
+  margin: 18px auto 0;
+  max-width: 720px;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.packs-bulk a {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
